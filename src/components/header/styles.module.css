@@ -1,0 +1,35 @@
+.section {
+  height: 100dvh;
+  position: relative;
+  background: url('../../assets/banner-image.webp') no-repeat center / cover;
+  color: var(--light-color, #fff);
+}
+
+.section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  background-color: var(--primary, #2a6cea);
+  opacity: 0.8;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
