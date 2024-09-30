@@ -1,5 +1,6 @@
 import { Header } from '../header';
 import { Steps } from '../steps';
+import { ThirdBlock } from '../third-block';
 import styles from './styles.module.css';
 
 export const App = () => {
@@ -8,6 +9,7 @@ export const App = () => {
       <Header />
       <main className={styles.main}>
         <Steps />
+        <ThirdBlock />
       </main>
     </div>
   );
