@@ -1,4 +1,5 @@
 import { Header } from '../header';
+import { Reviews } from '../reviews';
 import { Steps } from '../steps';
 import { ThirdBlock } from '../third-block';
 import styles from './styles.module.css';
@@ -10,6 +11,7 @@ export const App = () => {
       <main className={styles.main}>
         <Steps />
         <ThirdBlock />
+        <Reviews />
       </main>
     </div>
   );
