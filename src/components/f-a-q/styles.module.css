@@ -1,0 +1,11 @@
+.summary {
+  list-style: none;
+  padding: 24px 0;
+  display: flex;
+  border-top: 1px solid #eceff2;
+}
+
+.text {
+  color: var(--secondary-text-color, #5e646a);
+  margin-bottom: 24px;
+}

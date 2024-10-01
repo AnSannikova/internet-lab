@@ -34,10 +34,6 @@
   line-height: 1.5;
 }
 
-.bold {
-  font-weight: 600;
-}
-
 .caption {
   font-weight: 400;
   font-size: 12px;
@@ -68,4 +64,8 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
+}
+
+.bold {
+  font-weight: 600;
 }

@@ -1,3 +1,4 @@
+import { FaQ } from '../f-a-q';
 import { Header } from '../header';
 import { Reviews } from '../reviews';
 import { Steps } from '../steps';
@@ -12,6 +13,7 @@ export const App = () => {
         <Steps />
         <ThirdBlock />
         <Reviews />
+        <FaQ />
       </main>
     </div>
   );
