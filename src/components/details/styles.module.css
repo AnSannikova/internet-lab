@@ -1,0 +1,69 @@
+.summary {
+  width: 100%;
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: var(--light-color, #fff);
+  border-top: 1px solid var(--secondary, #eceff2);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.78;
+  transition: color ease-in-out 0.3s;
+}
+
+.summary:hover {
+  color: var(--primary, #2a6cea);
+  transition: color ease-in-out 0.3s;
+}
+
+.text {
+  position: relative;
+  z-index: -1;
+  display: none;
+  color: var(--secondary-text-color, #5e646a);
+  margin-bottom: 24px;
+}
+
+.visible {
+  display: block;
+  animation: open ease-in-out 0.3s;
+}
+
+.hidden {
+  animation: close ease-in-out 0.3s;
+}
+
+.svg {
+  rotate: 0;
+  transition: rotate ease-in-out 0.3s;
+}
+
+.svgTurned {
+  rotate: 45deg;
+  transition: rotate ease-in-out 0.3s;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes close {
+  0% {
+    opacity: 1;
+    display: block;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+}

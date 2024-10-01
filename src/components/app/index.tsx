@@ -1,4 +1,4 @@
-import { FaQ } from '../f-a-q';
+import { FaQ } from '../faq';
 import { Header } from '../header';
 import { Reviews } from '../reviews';
 import { Steps } from '../steps';
