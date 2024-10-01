@@ -10,8 +10,8 @@ export const FaQ: FC = () => (
     <Typography variant="h2" className={styles.title}>
       Вопросы и ответы
     </Typography>
-    {faqData.map((item) => (
-      <Details summary={item.title} detail={item.text} />
+    {faqData.map((item, index) => (
+      <Details key={index} summary={item.title} detail={item.text} />
     ))}
   </Container>
 );
