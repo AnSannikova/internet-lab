@@ -20,22 +20,21 @@ export const Carousel: FC<CarouselProps> = ({ slides, options }) => {
 
   return (
     <section className={styles.carousel}>
-      <div className={styles.viewport} ref={emblaRef}>
-        <div className={styles.container}>
-          {slides.map((slide, index) => (
-            <div className={styles.slide} key={index}>
-              {slide}
-            </div>
-          ))}
+      <div className={styles.wrapper}>
+        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+        <div className={styles.viewport} ref={emblaRef}>
+          <div className={styles.container}>
+            {slides.map((slide, index) => (
+              <div className={styles.slide} key={index}>
+                {slide}
+              </div>
+            ))}
+          </div>
         </div>
+        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
       </div>
 
       <div className={styles.controls}>
-        <div className={styles.buttons}>
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div>
-
         <div className={styles.dots}>
           {scrollSnaps.map((_, index) => (
             <DotButton

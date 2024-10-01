@@ -1,11 +1,10 @@
 import { FC } from 'react';
 import { Container } from '../container';
 import { Typography } from '../typography';
-import styles from './styles.module.css';
 import { Carousel } from '../carousel';
-
-const SLIDE_COUNT = 5;
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+import { reviewsData } from './constants';
+import styles from './styles.module.css';
+import { ReviewCard } from '../review-card';
 
 export const Reviews: FC = () => {
   return (
@@ -14,7 +13,11 @@ export const Reviews: FC = () => {
         <Typography variant="h2" className={styles.title}>
           Отзывы
         </Typography>
-        <Carousel slides={SLIDES} />
+        <Carousel
+          slides={reviewsData.map((item) => (
+            <ReviewCard {...item} />
+          ))}
+        />
       </Container>
     </section>
   );

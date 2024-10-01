@@ -5,10 +5,10 @@ type PropType = ComponentPropsWithRef<'button'>;
 
 export const PrevButton: FC<PropType> = ({ children, ...restProps }) => (
   <button className={styles.button} type="button" {...restProps}>
-    <svg className={styles.svg} viewBox="0 0 532 532">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         fill="currentColor"
-        d="M355.66 11.354c13.793-13.805 36.208-13.805 50.001 0 13.785 13.804 13.785 36.238 0 50.034L201.22 266l204.442 204.61c13.785 13.805 13.785 36.239 0 50.044-13.793 13.796-36.208 13.796-50.002 0a5994246.277 5994246.277 0 0 0-229.332-229.454 35.065 35.065 0 0 1-10.326-25.126c0-9.2 3.393-18.26 10.326-25.2C172.192 194.973 332.731 34.31 355.66 11.354Z"
+        d="M23.839 2.276A1.333 1.333 0 0 0 21.953.391L11.057 11.287a6.667 6.667 0 0 0 0 9.426L21.953 31.61a1.333 1.333 0 0 0 1.886-1.885L12.943 18.828a4 4 0 0 1 0-5.656L23.839 2.276Z"
       />
     </svg>
     {children}
@@ -17,11 +17,18 @@ export const PrevButton: FC<PropType> = ({ children, ...restProps }) => (
 
 export const NextButton: FC<PropType> = ({ children, ...restProps }) => (
   <button className={styles.button} type="button" {...restProps}>
-    <svg className={styles.svg} viewBox="0 0 532 532">
-      <path
-        fill="currentColor"
-        d="M176.34 520.646c-13.793 13.805-36.208 13.805-50.001 0-13.785-13.804-13.785-36.238 0-50.034L330.78 266 126.34 61.391c-13.785-13.805-13.785-36.239 0-50.044 13.793-13.796 36.208-13.796 50.002 0 22.928 22.947 206.395 206.507 229.332 229.454a35.065 35.065 0 0 1 10.326 25.126c0 9.2-3.393 18.26-10.326 25.2-45.865 45.901-206.404 206.564-229.332 229.52Z"
-      />
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clipPath="url(#a)">
+        <path
+          d="M8.391 29.724a1.333 1.333 0 1 0 1.886 1.885l10.896-10.896a6.673 6.673 0 0 0 0-9.426L10.277.39A1.333 1.333 0 0 0 8.39 2.276l10.896 10.896a4 4 0 0 1 0 5.656L8.391 29.724Z"
+          fill="currentColor"
+        />
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff" d="M0 0h32v32H0z" />
+        </clipPath>
+      </defs>
     </svg>
     {children}
   </button>

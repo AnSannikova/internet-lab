@@ -1,10 +1,9 @@
 .button {
+  flex-shrink: 0;
   appearance: none;
   background-color: transparent;
   touch-action: manipulation;
   cursor: pointer;
-  width: 3.6rem;
-  height: 3.6rem;
   color: var(--primary, #2a6cea);
   display: flex;
   align-items: center;
@@ -13,8 +12,4 @@
 
 .button:disabled {
   color: #c1c7cd;
-}
-.svg {
-  width: 35%;
-  height: 35%;
 }

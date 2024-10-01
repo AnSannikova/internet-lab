@@ -1,18 +1,24 @@
 .carousel {
-  max-width: 48rem;
+  max-width: 100%;
   margin: auto;
-  --slide-height: 19rem;
-  --slide-spacing: 2rem;
+  --slide-spacing: 27px;
   --slide-size: 33%;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
 .viewport {
-  overflow: hidden;
+  overflow-x: hidden;
+  padding: 25px 0;
 }
 
 .container {
   display: flex;
-  touch-action: pan-y pinch-zoom;
   margin-left: calc(var(--slide-spacing) * -1);
 }
 
@@ -24,24 +30,13 @@
 }
 
 .controls {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  justify-content: space-between;
-  gap: 1.2rem;
-  margin-top: 1.8rem;
-}
-
-.buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.6rem;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .dots {
+  flex-shrink: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
+  gap: 17px;
 }
