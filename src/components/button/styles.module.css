@@ -23,7 +23,7 @@
 }
 
 .primary:hover {
-  background-color: #397dff;
+  background-color: var(--btn-hover-color, #397dff);
 }
 
 .secondary,
