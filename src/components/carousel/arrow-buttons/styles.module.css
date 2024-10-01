@@ -11,5 +11,5 @@
 }
 
 .button:disabled {
-  color: #c1c7cd;
+  color: var(--carousel-btn-color, #c1c7cd);
 }

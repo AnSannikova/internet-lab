@@ -1,7 +1,7 @@
 .dot {
   display: block;
   appearance: none;
-  background-color: #c1c7cd;
+  background-color: var(--carousel-btn-color, #c1c7cd);
   touch-action: manipulation;
   cursor: pointer;
   width: 8px;
