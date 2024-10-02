@@ -1,3 +1,4 @@
+export { ResearchCard } from './research-card';
 export { Typography } from './typography';
 export { ReviewCard } from './review-card';
 export { MenuList } from './menu-list';

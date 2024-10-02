@@ -1,5 +1,6 @@
 import { FaQ } from '../faq';
 import { Header } from '../header';
+import { Research } from '../research';
 import { Reviews } from '../reviews';
 import { Steps } from '../steps';
 import { ThirdBlock } from '../third-block';
@@ -14,6 +15,7 @@ export const App = () => {
         <ThirdBlock />
         <Reviews />
         <FaQ />
+        <Research />
       </main>
     </div>
   );

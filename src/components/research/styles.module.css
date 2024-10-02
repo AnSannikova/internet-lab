@@ -1,0 +1,10 @@
+.section {
+  padding: 68px 0;
+  background-color: var(--section-accent-bg, #f5f7f9);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(592px, 1fr));
+  gap: 32px;
+}
