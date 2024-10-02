@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 export const Banner: FC = () => (
   <div className={styles.wrapper}>
-    <Typography variant="h1" className={styles.title}>
+    <Typography variant="h1" align="center" className={styles.title}>
       Говорят, никогда не поздно сменить профессию
     </Typography>
     <Typography variant="body18" className={styles.text}>

@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 
 export const FaQ: FC = () => (
   <Container component="section">
-    <Typography variant="h2" className={styles.title}>
+    <Typography variant="h2" align="center" className={styles.title}>
       Вопросы и ответы
     </Typography>
     {faqData.map((item, index) => (

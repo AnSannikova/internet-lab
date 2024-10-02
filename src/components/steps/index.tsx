@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 export const Steps: FC = () => (
   <Container component="section">
-    <Typography variant="h2" className={styles.title}>
+    <Typography variant="h2" align="center" className={styles.title}>
       Как это работает
     </Typography>
     <div className={styles.wrapper}>

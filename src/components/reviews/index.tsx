@@ -7,7 +7,7 @@ export const Reviews: FC = () => {
   return (
     <section className={styles.section}>
       <Container>
-        <Typography variant="h2" className={styles.title}>
+        <Typography variant="h2" align="center" className={styles.title}>
           Отзывы
         </Typography>
         <Carousel
