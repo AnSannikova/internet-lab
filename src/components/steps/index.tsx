@@ -1,11 +1,10 @@
 import { FC } from 'react';
-import { Container } from '../container';
+import { Container, Typography } from '../ui';
 import waiting from '@/assets/waiting.svg';
 import deliveryTrack from '@/assets/delivery-track.svg';
 import secure from '@/assets/secure.svg';
 import moneyBags from '@/assets/money-bags.svg';
 import styles from './styles.module.css';
-import { Typography } from '../typography';
 
 export const Steps: FC = () => (
   <Container component="section">

@@ -1,9 +1,7 @@
 import { FC } from 'react';
-import styles from './styles.module.css';
-import { Logo } from '../logo';
-import { MenuList } from '../menu-list';
 import { Banner } from '../banner';
-import { Container } from '../container';
+import { Container, Logo, MenuList } from '../ui';
+import styles from './styles.module.css';
 
 export const Header: FC = () => (
   <section className={styles.section}>

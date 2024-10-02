@@ -1,7 +1,6 @@
 import { FC } from 'react';
+import { Typography, Button } from '../ui';
 import styles from './styles.module.css';
-import { Button } from '../button';
-import { Typography } from '../typography';
 
 export const Banner: FC = () => (
   <div className={styles.wrapper}>

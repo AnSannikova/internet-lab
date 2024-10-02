@@ -1,9 +1,7 @@
 import { FC } from 'react';
-import { Container } from '../container';
-import { Typography } from '../typography';
-import styles from './styles.module.css';
 import { faqData } from './constants';
-import { Details } from '../details';
+import { Container, Typography, Details } from '../ui';
+import styles from './styles.module.css';
 
 export const FaQ: FC = () => (
   <Container component="section">

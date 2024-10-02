@@ -1,9 +1,9 @@
-import { Container } from '../container';
-import { Typography } from '../typography';
+import { FC } from 'react';
+import { Container, Typography } from '../ui';
 import image from '@/assets/smartphone.webp';
 import styles from './styles.module.css';
 
-export const ThirdBlock = () => (
+export const ThirdBlock: FC = () => (
   <Container component="section" className={styles.section}>
     <div>
       <Typography variant="h3" className={styles.title}>

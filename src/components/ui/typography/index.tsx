@@ -1,4 +1,4 @@
-import { createElement, ReactNode } from 'react';
+import { createElement, FC, ReactNode } from 'react';
 import styles from './styles.module.css';
 import clsx from 'clsx';
 
@@ -23,10 +23,15 @@ interface TypographyProps {
   className?: string;
 }
 
-export function Typography({ variant = 'body16', children, bold, className }: TypographyProps) {
+export const Typography: FC<TypographyProps> = ({
+  variant = 'body16',
+  children,
+  bold,
+  className,
+}) => {
   return createElement(
     tagType[variant],
     { className: clsx(styles[variant], bold && styles.bold, className) },
     children
   );
-}
+};

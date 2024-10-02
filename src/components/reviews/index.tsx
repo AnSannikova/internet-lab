@@ -1,10 +1,7 @@
 import { FC } from 'react';
-import { Container } from '../container';
-import { Typography } from '../typography';
-import { Carousel } from '../carousel';
+import { Container, Typography, Carousel, ReviewCard } from '../ui';
 import { reviewsData } from './constants';
 import styles from './styles.module.css';
-import { ReviewCard } from '../review-card';
 
 export const Reviews: FC = () => {
   return (
