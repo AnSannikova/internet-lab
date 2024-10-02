@@ -19,6 +19,7 @@ const tagType = {
 interface TypographyProps {
   variant?: keyof typeof tagType;
   bold?: boolean;
+  align?: 'center' | 'left' | 'right';
   children?: ReactNode;
   className?: string;
 }
@@ -27,11 +28,12 @@ export const Typography: FC<TypographyProps> = ({
   variant = 'body16',
   children,
   bold,
+  align = 'left',
   className,
 }) => {
   return createElement(
     tagType[variant],
-    { className: clsx(styles[variant], bold && styles.bold, className) },
+    { className: clsx(styles[variant], bold && styles.bold, styles[align], className) },
     children
   );
 };
