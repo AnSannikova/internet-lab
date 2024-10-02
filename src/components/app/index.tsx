@@ -1,4 +1,6 @@
 import { FaQ } from '../faq';
+import { Footer } from '../footer';
+import { Form } from '../form';
 import { Header } from '../header';
 import { Research } from '../research';
 import { Reviews } from '../reviews';
@@ -16,7 +18,9 @@ export const App = () => {
         <Reviews />
         <FaQ />
         <Research />
+        <Form />
       </main>
+      <Footer />
     </div>
   );
 };
