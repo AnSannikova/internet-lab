@@ -1,0 +1,66 @@
+.wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding: 28px 16px 4px;
+  background-color: var(--light-color, #fff);
+  border: 2px solid var(--border-input-color, #c2c8cd);
+  border-radius: 4px;
+  transition:
+    border-color ease-in-out 0.3s,
+    background-color ease-in-out 0.3s;
+}
+
+.wrapperNotFocus {
+  background-color: var(--section-accent-bg, #f5f7f9);
+  border-color: #f6f8fa;
+  transition: all ease-in-out 0.3s;
+}
+
+.wrapperError {
+  border-color: var(--error-color, #f13636);
+}
+
+.label {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--label-input-color, #83898f);
+  transition:
+    color ease-in-out 0.3s,
+    transform ease-in-out 0.3s,
+    font-size ease-in-out 0.3s;
+}
+
+.labelNotFocus {
+  transform: translateY(10px);
+  font-size: 18px;
+  color: var(--secondary-text-color, #5e646a);
+  transition: all ease-in-out 0.3s;
+}
+
+.input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.error {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--error-color, #f13636);
+}
