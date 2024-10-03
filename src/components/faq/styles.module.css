@@ -1,3 +1,9 @@
 .title {
   margin-bottom: 40px;
 }
+
+@media (width <= 375px) {
+  .title {
+    margin-bottom: 28px;
+  }
+}

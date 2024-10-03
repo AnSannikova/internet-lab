@@ -1,6 +1,6 @@
 import { forwardRef, InputHTMLAttributes, useRef, useState } from 'react';
 import clsx from 'clsx';
-import { useOutsideClick } from '@/components/hooks/use-outside-click';
+import { useOutsideClick } from '@/hooks/use-outside-click';
 import success from '@/assets/success.svg';
 import danger from '@/assets/error.svg';
 import styles from './styles.module.css';

@@ -1,0 +1,29 @@
+.card {
+  width: 100%;
+  max-width: 280px;
+}
+
+.image {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.text {
+  color: var(--secondary-text-color, #5e646a);
+}
+
+@media (width <= 768px) {
+  .card {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 4px 16px;
+  }
+
+  .image {
+    width: 56px;
+    margin-bottom: 0;
+    grid-row: 1 / 3;
+  }
+}

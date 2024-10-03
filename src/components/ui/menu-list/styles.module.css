@@ -8,3 +8,30 @@
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
 }
+
+.mobileMenu {
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+}
+
+.mobileItem {
+  border-top: 1px solid var(--secondary, #eceff2);
+}
+.mobileItem:last-child {
+  border-bottom: 1px solid var(--secondary, #eceff2);
+}
+
+.mobileLink {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (width <= 768px) {
+  .list {
+    display: none;
+  }
+}

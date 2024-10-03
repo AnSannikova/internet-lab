@@ -1,4 +1,10 @@
+.link {
+  display: flex;
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
   padding: 22px 22px 38px;
   min-height: 316px;
   background-color: var(--light-color, #fff);

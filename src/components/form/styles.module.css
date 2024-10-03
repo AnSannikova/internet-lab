@@ -10,3 +10,16 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 32px 30px;
 }
+
+@media (width <= 630px) {
+  .form {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (width <= 375px) {
+  .title {
+    margin-bottom: 30px;
+  }
+}

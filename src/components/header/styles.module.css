@@ -32,4 +32,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: color ease-in-out 0.3s;
+}
+
+.menuIsOpen {
+  color: var(--main-text-color, #191c1f);
+  transition: all ease-in-out 0.3s;
+}
+
+@media (width <= 768px) {
+  .header {
+    padding: 9px 0;
+  }
 }

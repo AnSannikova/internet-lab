@@ -1,3 +1,7 @@
-.logo {
+.wrapper {
+  position: relative;
+  z-index: 10;
+}
+.svg {
   display: block;
 }

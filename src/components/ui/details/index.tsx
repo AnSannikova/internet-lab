@@ -17,8 +17,8 @@ export const Details: FC<DetailsProps> = ({ summary, detail }) => {
 
   return (
     <div>
-      <button onClick={onClick} className={styles.summary}>
-        {summary}
+      <button onClick={onClick} className={styles.button}>
+        <span className={styles.summary}>{summary}</span>
         <svg
           className={clsx(styles.svg, isOpen && styles.svgTurned)}
           width="24"

@@ -1,13 +1,28 @@
 import { FC } from 'react';
 import { Button, Container, Input, Typography } from '../ui';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import styles from './styles.module.css';
 import { Checkbox } from '../ui/checkbox';
+import styles from './styles.module.css';
 
 interface IForm {
   name: string;
   phone: string;
 }
+
+const request = (data: IForm) => {
+  return fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      data,
+    }),
+  }).then((res) => {
+    if (res.ok) {
+      return res.json();
+    }
+    return Promise.reject(`Ошибка: ${res.status}`);
+  });
+};
 
 export const Form: FC = () => {
   const {
@@ -21,10 +36,13 @@ export const Form: FC = () => {
       agreement: false,
     },
   });
-  const onSubmit: SubmitHandler<IForm> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<IForm> = (data) => {
+    console.log(data);
+    request(data);
+  };
 
   return (
-    <Container component="section">
+    <Container id="form" component="section">
       <Typography variant="h2" align="center" className={styles.title}>
         Отправь форму
       </Typography>

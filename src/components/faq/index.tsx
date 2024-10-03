@@ -4,7 +4,7 @@ import { Container, Typography, Details } from '../ui';
 import styles from './styles.module.css';
 
 export const FaQ: FC = () => (
-  <Container component="section">
+  <Container id="faq" component="section">
     <Typography variant="h2" align="center" className={styles.title}>
       Вопросы и ответы
     </Typography>

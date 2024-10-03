@@ -28,12 +28,12 @@ export const Typography: FC<TypographyProps> = ({
   variant = 'body16',
   children,
   bold,
-  align = 'left',
+  align,
   className,
 }) => {
   return createElement(
     tagType[variant],
-    { className: clsx(styles[variant], bold && styles.bold, styles[align], className) },
+    { className: clsx(styles[variant], bold && styles.bold, align && styles[align], className) },
     children
   );
 };

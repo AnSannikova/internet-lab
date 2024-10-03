@@ -1,18 +1,18 @@
 export const menuItems = [
   {
     name: 'Как это работает',
-    href: '#',
+    href: '#steps',
   },
   {
     name: '3-й блок',
-    href: '#',
+    href: '#third-block',
   },
   {
     name: 'Вопросы и ответы',
-    href: '#',
+    href: '#faq',
   },
   {
     name: 'Форма',
-    href: '#',
+    href: '#form',
   },
 ];

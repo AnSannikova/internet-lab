@@ -8,3 +8,10 @@
   flex-direction: column;
   gap: 80px;
 }
+
+@media (width <= 768px) {
+  .main {
+    padding: 56px 0;
+    gap: 56px;
+  }
+}

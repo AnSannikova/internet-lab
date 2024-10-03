@@ -9,16 +9,24 @@
   flex-wrap: wrap;
 }
 
-.card {
-  width: 100%;
-  max-width: 280px;
+@media (width <= 768px) {
+  .title {
+    margin-bottom: 42px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
 }
 
-.image {
-  display: block;
-  margin-bottom: 16px;
-}
+@media (width <= 375px) {
+  .title {
+    margin-bottom: 20px;
+  }
 
-.text {
-  color: var(--secondary-text-color, #5e646a);
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

@@ -24,6 +24,7 @@
 }
 
 .slide {
+  display: flex;
   transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
   min-width: 0;
@@ -40,4 +41,18 @@
   flex-shrink: 0;
   display: flex;
   gap: 17px;
+}
+
+@media (width < 950px) {
+  .carousel {
+    --slide-spacing: 24px;
+    --slide-size: 50%;
+  }
+}
+
+@media (width < 768px) {
+  .carousel {
+    --slide-spacing: 24px;
+    --slide-size: 100%;
+  }
 }

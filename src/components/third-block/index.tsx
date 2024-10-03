@@ -4,7 +4,7 @@ import image from '@/assets/smartphone.webp';
 import styles from './styles.module.css';
 
 export const ThirdBlock: FC = () => (
-  <Container component="section" className={styles.section}>
+  <Container id="third-block" component="section" className={styles.section}>
     <div>
       <Typography variant="h3" className={styles.title}>
         Круто, ты дошел до третьего блока

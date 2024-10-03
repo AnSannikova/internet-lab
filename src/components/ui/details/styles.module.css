@@ -1,4 +1,4 @@
-.summary {
+.button {
   width: 100%;
   padding: 24px 0;
   display: flex;
@@ -13,9 +13,13 @@
   transition: color ease-in-out 0.3s;
 }
 
-.summary:hover {
+.button:hover {
   color: var(--primary, #2a6cea);
   transition: color ease-in-out 0.3s;
+}
+
+.summary {
+  text-align: left;
 }
 
 .text {
@@ -36,7 +40,8 @@
 }
 
 .svg {
-  rotate: 0;
+  flex-shrink: 0;
+  rotate: 0deg;
   transition: rotate ease-in-out 0.3s;
 }
 
@@ -65,5 +70,15 @@
   100% {
     opacity: 0;
     transform: translateY(-50%);
+  }
+}
+
+@media (width <= 768px) {
+  .button {
+    align-items: flex-start;
+  }
+
+  .svg {
+    margin-top: 10px;
   }
 }
