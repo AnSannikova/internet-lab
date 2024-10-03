@@ -1,0 +1,55 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  height: fit-content;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border-input-color, #c2c8cd);
+  border-radius: 4px;
+  margin-right: 16px;
+  transition:
+    background-color ease-in-out 0.3s,
+    border-color ease-in-out 0.3s;
+}
+
+.input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  user-select: none;
+}
+
+.input:checked ~ .label .checkbox {
+  background-color: var(--primary, #2a6cea);
+  border-color: var(--primary, #2a6cea);
+  transition: all ease-in-out 0.3s;
+}
+
+.input:checked ~ .label .checkbox::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../../../assets/check.svg') center no-repeat;
+}
+
+.error {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--error-color, #f13636);
+}

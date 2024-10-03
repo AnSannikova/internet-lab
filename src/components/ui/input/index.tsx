@@ -57,7 +57,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           />
           <div>
             {error && <img src={danger} alt="" />}
-            {!error && !focus && <img src={success} alt="" />}
+            {!error && !focus && input && input.value && <img src={success} alt="" />}
           </div>
           {error && <span className={styles.error}>{error}</span>}
         </div>
